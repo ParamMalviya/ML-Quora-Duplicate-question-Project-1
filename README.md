@@ -17,9 +17,9 @@ two raw questions
       |
       v  preprocess()      lowercase, expand contractions, strip HTML + punctuation
       |
-      v  22 engineered features  +  tf-idf cosine similarity  +  bag-of-words (3000/question)
+      v  23 engineered features (incl. tf-idf cosine similarity)  +  bag-of-words (3000/question)
       |
-      v  [22] + [1] + [3000 q1] + [3000 q2]  =  6023 numbers
+      v  [23] + [3000 q1] + [3000 q2]  =  6023 numbers
       |
       v  RandomForestClassifier  ->  duplicate / not duplicate
 ```
